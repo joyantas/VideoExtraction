@@ -1,7 +1,8 @@
 # VideoExtraction
 
 Campaign-video evidence extraction and upload-readiness review with a web upload
-frontend, authenticated API, and containerized analysis worker.
+frontend, authenticated API, and containerized analysis worker. The project name
+is intentionally **VideoExtraction**.
 
 The project, repository, and Python distribution are named **VideoExtraction**.
 The Python import namespace and `src/videoextration/` directory remain
