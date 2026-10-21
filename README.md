@@ -1,8 +1,8 @@
-# VideoExtration
+# VideoExtraction
 
 Campaign-video evidence extraction and upload-readiness review with a web upload
 frontend, authenticated API, and containerized analysis worker. The project name
-is intentionally **VideoExtration**.
+is intentionally **VideoExtraction**.
 
 **Implemented:** durable local uploads/jobs/reports; real FFprobe metadata and
 FFmpeg frame checks; an Azure private Blob + Queue backend; an event-driven
