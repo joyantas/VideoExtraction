@@ -41,7 +41,7 @@ def create_app(settings=None, *, backend_factory=None, authenticate=None):
     if settings.mode == "azure" and authenticate is None:
         raise ValueError("Azure mode requires a verified identity provider")
     store, blobs = backend.store, backend.blobs
-    app = FastAPI(title="VideoExtration", version="0.1.0")
+    app = FastAPI(title="VideoExtraction", version="0.1.0")
     app.state.backend = backend
     app.state.settings = settings
     app.add_middleware(

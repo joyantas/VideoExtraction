@@ -1,1 +1,1 @@
-"""VideoExtration: bounded local video inspection, with replaceable providers."""
+"""VideoExtraction: bounded local video inspection, with replaceable providers."""

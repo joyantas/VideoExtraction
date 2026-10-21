@@ -186,17 +186,17 @@ az deployment sub what-if --subscription "$SUBSCRIPTION" \
 
 # CREATES RESOURCES AND INCURS CHARGES: separate approval required.
 az deployment sub create --subscription "$SUBSCRIPTION" \
-  --name videoextration-base --location eastus2 \
+  --name videoextraction-base --location eastus2 \
   --template-file infra/main.bicep \
   --parameters @infra/main.parameters.json apiAudience="$API_AUDIENCE" deployCompute=false
 
 # BUILDS/PUSHES AN IMAGE AND MAY INCUR CHARGES: separate approval required.
 az acr build --subscription "$SUBSCRIPTION" \
-  --registry crvideoextradev1737 --image videoextration:sample .
+  --registry crvideoextradev1737 --image videoextraction:sample .
 
 # DEPLOYS THE REAL API/WORKER: separate approval required.
 az deployment sub create --subscription "$SUBSCRIPTION" \
-  --name videoextration-compute --location eastus2 \
+  --name videoextraction-compute --location eastus2 \
   --template-file infra/main.bicep \
   --parameters @infra/main.parameters.json apiAudience="$API_AUDIENCE" \
     imageTag=sample deployCompute=true

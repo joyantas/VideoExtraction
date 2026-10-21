@@ -1,8 +1,13 @@
-# VideoExtration
+# VideoExtraction
 
 Campaign-video evidence extraction and upload-readiness review with a web upload
-frontend, authenticated API, and containerized analysis worker. The project name
-is intentionally **VideoExtration**.
+frontend, authenticated API, and containerized analysis worker.
+
+The project, repository, and Python distribution are named **VideoExtraction**.
+The Python import namespace and `src/videoextration/` directory remain
+`videoextration` for compatibility with existing commands, installations, and
+running workers. The local folder, `.env`, saved jobs, placement identifiers,
+and existing Azure resource-name settings are unchanged.
 
 **Implemented:** durable local uploads/jobs/reports; real FFprobe metadata and
 FFmpeg frame checks; an Azure private Blob + Queue backend; an event-driven
@@ -126,13 +131,13 @@ is not wanted. Local mode does not enable the campaign/OCR/safety pipeline.
 ## Container
 
 ```bash
-docker build -t videoextration:sample .
+docker build -t videoextraction:sample .
 mkdir -p data
 docker run --rm -p 3000:3000 --env-file .env \
-  -v "$PWD/data:/app/data" videoextration:sample
+  -v "$PWD/data:/app/data" videoextraction:sample
 # In another terminal, sharing the same directory and environment:
 docker run --rm --env-file .env -v "$PWD/data:/app/data" \
-  videoextration:sample python -m videoextration.worker
+  videoextraction:sample python -m videoextration.worker
 ```
 
 Ensure the bind mount is writable by the image's non-root `app` user. Azure

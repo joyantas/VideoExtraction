@@ -32,7 +32,7 @@ def create_app(store=None, auth=None) -> FastAPI:
     store = store or AzureStore()
     auth = auth or EntraAuth()
     settings = Settings.from_env()
-    app = FastAPI(title="VideoExtration", docs_url=None, redoc_url=None, openapi_url=None)
+    app = FastAPI(title="VideoExtraction", docs_url=None, redoc_url=None, openapi_url=None)
     assets = Path(__file__).parent / "static"
     app.mount("/static", StaticFiles(directory=assets), name="static")
 

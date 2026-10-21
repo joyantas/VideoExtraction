@@ -1,6 +1,6 @@
-# VideoExtration architecture
+# VideoExtraction architecture
 
-VideoExtration is an evidence-first campaign-video review sample, not a publishing
+VideoExtraction is an evidence-first campaign-video review sample, not a publishing
 approval authority. The exact project spelling is intentional.
 
 ```mermaid

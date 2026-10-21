@@ -9,6 +9,15 @@ from videoextration.config import Settings
 from videoextration.store import load_backend
 
 
+def test_project_branding(client):
+    assert client.app.title == "VideoExtraction"
+    assert client.get("/openapi.json").json()["info"]["title"] == "VideoExtraction"
+    page = client.get("/")
+    assert page.status_code == 200
+    assert "<h1>VideoExtraction</h1>" in page.text
+    assert "<title>VideoExtraction " in page.text
+
+
 def test_health_anonymous_and_direct(client):
     for path in ("/healthz", "/readyz"):
         response = client.get(path, follow_redirects=False)

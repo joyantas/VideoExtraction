@@ -74,7 +74,7 @@ module resources './modules/resources.bicep' = {
     location: location
     tags: tags
     deployCompute: deployCompute
-    containerImage: containerImage == '' ? '${registryName}.azurecr.io/videoextration:${imageTag}' : containerImage
+    containerImage: containerImage == '' ? '${registryName}.azurecr.io/videoextraction:${imageTag}' : containerImage
     tenantId: tenantId
     apiAudience: apiAudience
     corsOrigin: corsOrigin

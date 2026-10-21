@@ -65,6 +65,14 @@ def create(client):
     })
 
 
+def test_cloud_project_branding(cloud):
+    client, _ = cloud
+    assert client.app.title == "VideoExtraction"
+    page = client.get("/")
+    assert page.status_code == 200
+    assert "<h1>VideoExtraction</h1>" in page.text
+
+
 def test_cloud_authorization_and_owner_isolation(cloud):
     client, store = cloud
     assert client.post("/api/jobs", json={}).status_code == 401

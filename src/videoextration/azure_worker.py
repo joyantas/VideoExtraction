@@ -80,7 +80,7 @@ def process_one(store=None, analyze=None) -> bool:
             return True
         job.update(status="processing", updated_at=utc_now())
         store.save(job, lease=lease)
-        with tempfile.TemporaryDirectory(prefix="videoextration-") as directory:
+        with tempfile.TemporaryDirectory(prefix="videoextraction-") as directory:
             root = Path(directory)
             source = root / "source.video"
             store.download(job, source)

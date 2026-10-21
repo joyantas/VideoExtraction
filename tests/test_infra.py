@@ -38,7 +38,7 @@ def test_compute_is_opt_in_and_auth_config_is_required(arm):
     assert arm["parameters"]["apiAudience"]["minLength"] == 1
     module = next(resource for resource in resources(arm) if resource["type"] == "Microsoft.Resources/deployments")
     image = json.dumps(module["properties"]["parameters"]["containerImage"])
-    assert "videoextration:" in image and "https://" not in image
+    assert "videoextraction:" in image and "https://" not in image
 
 
 def test_both_compute_targets_pull_private_images_and_use_numeric_cpu(arm):
