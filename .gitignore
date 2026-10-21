@@ -1,0 +1,13 @@
+.copilot-azure/
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+!.env.sample
+data/
+*.sqlite3*
+*.egg-info/
+build/
+dist/
+.DS_Store

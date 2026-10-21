@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": { "value": "videoextra-dev-1737" },
+    "location": { "value": "eastus2" },
+    "sessionId": { "value": "173733f4-1029-459f-b683-3189d6ae96d7" },
+    "deployedBy": { "value": "operator" },
+    "createdAt": { "value": "2026-10-20T14:51:26.2868480+02:00" },
+    "deployCompute": { "value": false },
+    "imageTag": { "value": "latest" },
+    "containerImage": { "value": "" },
+    "tenantId": { "value": "16b3c013-d300-468d-ac64-7eda0820b6d3" },
+    "apiAudience": { "value": "" },
+    "corsOrigin": { "value": "" },
+    "cuEndpoint": { "value": "" },
+    "cuAnalyzerId": { "value": "campaign-video-v1" },
+    "cuModelDeployments": { "value": "{}" },
+    "safetyEndpoint": { "value": "" },
+    "ocrEndpoint": { "value": "" },
+    "enablePaidAi": { "value": false },
+    "uploadsRetentionDays": { "value": 7 },
+    "reportsRetentionDays": { "value": 30 },
+    "resourceGroupName": { "value": "rg-videoextra-dev-1737" },
+    "containerAppName": { "value": "ca-videoextra-dev-1737" },
+    "jobName": { "value": "job-videoextra-dev-1737" },
+    "environmentResourceName": { "value": "env-videoextra-dev-1737" },
+    "registryName": { "value": "crvideoextradev1737" },
+    "storageName": { "value": "stvideoextradev1737" },
+    "logWorkspaceName": { "value": "log-videoextra-dev-1737" },
+    "identityName": { "value": "id-videoextra-dev-1737" }
+  }
+}

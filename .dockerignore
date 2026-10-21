@@ -1,0 +1,16 @@
+.git
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.env
+.env.*
+!.env.sample
+data
+tests
+.copilot-azure
+*.sqlite3*
+*.egg-info
+build
+dist

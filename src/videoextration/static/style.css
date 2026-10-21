@@ -1,0 +1,32 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #18233c; background: #f1f4f9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 960px; margin: 0 auto; padding: 48px 20px; }
+header { margin-bottom: 28px; }
+.eyebrow { font-size: .75rem; letter-spacing: .16em; font-weight: 700; color: #385a99; }
+h1 { font-size: clamp(2rem, 6vw, 3.2rem); letter-spacing: -.04em; margin: 8px 0; }
+h2 { font-size: 1.3rem; margin-top: 0; }
+p { line-height: 1.6; }
+aside { border-left: 4px solid #bd7a16; background: #fff8e8; padding: 18px; line-height: 1.6; margin-bottom: 24px; }
+section { background: white; border: 1px solid #dce3ef; border-radius: 14px; padding: 24px; margin-bottom: 24px; }
+label { display: block; font-weight: 600; margin: 18px 0 8px; }
+input, textarea { width: 100%; padding: 12px; border: 1px solid #acb9cf; border-radius: 7px; font: inherit; }
+input[type="file"] { background: #f7f9fc; }
+button { border: none; background: #2458ae; color: white; padding: 13px 20px; border-radius: 7px; cursor: pointer; font: inherit; font-weight: 600; white-space: nowrap; }
+button:disabled { opacity: .5; cursor: wait; }
+button.secondary { background: #e8eef8; color: #23416d; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #719ce6; outline-offset: 2px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 18px; }
+.actions input { flex: 1; min-width: 180px; }
+.hint { font-size: .85rem; color: #576680; font-weight: 400; margin: 6px 0; }
+#status { margin-top: 20px; padding: 14px; background: #f0f4fc; border-radius: 7px; overflow-wrap: anywhere; }
+#findings { list-style: none; padding: 0; }
+#findings li { padding: 14px 0; border-bottom: 1px solid #e4e9f1; }
+.badge { display: inline-block; padding: 3px 8px; border-radius: 5px; background: #edf0f5; margin-right: 10px; font-size: .8rem; font-weight: 700; }
+.badge.pass { background: #dcf4e8; color: #175a39; }
+.badge.fail { background: #ffe2e0; color: #872923; }
+.badge.needs-review { background: #fff0c9; color: #775000; }
+pre { overflow: auto; font-size: .8rem; background: #f6f8fc; padding: 16px; max-height: 600px; }
+details { margin-top: 24px; }
+summary { cursor: pointer; }
+@media (max-width: 500px) { section { padding: 18px; } main { padding-top: 28px; } }
